@@ -10,41 +10,72 @@
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="./css/index.css" />
   <script src="https://kit.fontawesome.com/25ca646145.js" crossorigin="anonymous"></script>
+  <script src="./js/index.js"></script>
 </head>
 
 <body>
-  <div class="topnav">
-    <a href="#">LOREM</a>
+  <div id="topnav" class="topnav">
+    <a href="#">HOME</a>
 
-    <a href="#">LOREM</a>
+    <a href="#portfolio">PORTFOLIO</a>
 
-    <a href="#">LOREM</a>
+    <a href="#about">ABOUT</a>
 
-    <a href="#">LOREM</a>
-
-    <a href="#">LOREM</a>
+    <a href="#contact">CONTACT</a>
   </div>
 
-  <div class="container-fluid">
+  <div class="container-fluid p-0">
 
-    <section class="section-greetings d-flex justify-content-center align-items-center mt-3">
-      <h1 id="greetings"></h1>
-    </section>
-
-    <div class="photo-banner">
-
-
-
-
-      <!-- <img src="./assets/heitor_profile.jpeg" class="photo-profile mx-auto" /> -->
+    <div class="container-greetings d-flex justify-content-center align-items-center">
+      <p id="greetings"></p>
     </div>
-  </div>
 
+    <div id="portfolio" class="container-portfolio">
+
+    </div>
+    <div id="about" class="container-about">
+
+      <div style="display: inline-block;">
+        <img src="./assets/heitor_profile.jpeg" alt="">
+      </div>
+      <div class="about-text">
+        <section class="">
+          <h4>A bit about me</h4>
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Per aumento de cachacis, eu reclamis. Todo mundo vê os porris
+            que eu tomo, mas ninguém vê os tombis que eu levo! Suco de cevadiss deixa as pessoas mais interessantis.
+            Admodum accumsan disputationi eu sit. Vide electram sadipscing et per.
+            Mé faiz elementum girarzis, nisi eros vermeio. Si u mundo tá muito paradis? Toma um mé que o mundo vai
+            girarzis! Nec orci ornare consequat. Praesent lacinia ultrices consectetur. Sed non ipsum felis. Vehicula
+            non. Ut sed ex eros. Vivamus sit amet nibh non tellus tristique interdum.</p>
+        </section>
+      </div>
+
+    </div>
+
+    <div id="contact" class="container-contact">
+      <div class="contact-icons">
+        <div class="icon-div">
+          <a><i class="fa-brands fa-linkedin fa-3x" style=""></i> Linkedin</a>
+        </div>
+        <div class="icon-div">
+          <a><i class="fa-solid fa-envelope fa-3x" style=""></i> E-mail</a>
+        </div>
+        <div class="icon-div">
+          <a><i class="fa-brands fa-github fa-3x" style=""></i> Github</a>
+        </div>
+      </div>
+      <div class="hire-me">
+        <a class="btn-cv" style="">
+          <p>Get a CV</p>
+        </a>
+      </div>
+
+    </div>
   </div>
 </body>
 <script>
   var i = 0;
-  var txt = 'HI, MY NAME IS HEITOR';
+  var txt = "HELLO! I'M HEITOR. YOUR NEW FAVORITE DEVELOPER";
   var speed = 80;
 
   function typeWriter() {
@@ -56,6 +87,7 @@
   }
 
   $(document).ready(typeWriter());
+
 </script>
 
 </html>

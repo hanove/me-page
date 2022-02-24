@@ -1,69 +1,225 @@
+@font-face {
+    font-family: hacked;
+    src: url("../assets/fonts/Hacked-KerX.ttf");
+}
+
 @keyframes bouncing-me{
     0% {transform: translate(10px, 10px)}
     50% {transform: translate(-10px, -10px);}
     100% {transform: translate(10px, 10px);}
 }
 
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
+*{margin: 0; padding: 0;}
 
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange }
+html{
+    /* overflow: scroll; */
 }
-
-*{margin: 0;}
 
 body{
-    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #222222;
 }
 
-.photo-banner{
+.photo-profile{
     /* top: 0;
     position: relative; */
     /* width: 100%; */
-    /* height: 100vh;
-    background: url("../assets/heitor_profile.jpeg") no-repeat;
+    height: 100vh;
     background-size: cover;
-    background-position: left; */
+    background-position: left;
 }
 
 
 
 .topnav {
     width: 100%;
-    background-color: aqua;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: #222222;
     overflow: hidden;
     display: flex;
     justify-content: center;
+    transition: 0.6s;
+    padding: 5px 200px;
 }
 
 .topnav a{
     text-decoration: none;
     text-align: center;
-    font-size: 17px;
+    font-size: 14px;
+    font-weight: 400px;
     padding: 14px 16px;
-    color: snow;
+    color: #FFFFFF;
 }
 
-.section-greeting{
-    width: auto;
-    /* display: flex; */
+.topnav a:hover {
+    color: #FEE101;
+}
+
+.topnav a:active{
+    color: #6BAA4F
+}
+
+.topnav.sticky{
+    padding: 5px 100px;
+    background-color: #FEE101;
+    height: 50px;
+}
+
+.topnav.sticky a{
+    color: #222222;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container-greetings{
+    background-color: #FEE101;
+    width: 100%;
+    height: 300px;
+    display: contents;
     justify-content: center;
 }
 
-.section-greeting h1 {
-    font-family: monospace;
-    overflow: hidden;
-    display: flexbox;
-    width: auto;
-    border-right: .15em solid orange;
-    white-space: nowrap;
-    margin: 0 auto;
-    letter-spacing: .15em;
-    animation: typing 3.5s steps(30, end), blink-caret .5s step-end infinite;
+.container-greetings p {
+    font-family: hacked;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: normal;
 }
 
+.container-about{
+    width: 100%;
+    height: 500px;
+    max-height: 500px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* background-color: #222222; */
+}
 
+.container-portfolio{
+    /* background-color: #222222; */
+    height: 800px;
+    width: 100%;
+}
+
+.about-text{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    width: 35vw;
+    color: #FEE101;
+}
+
+.about-pics{
+    /* height: 70vh; */
+    width: 440px;
+}
+
+.about-pics img{
+    height: 70vh;
+    width: auto;
+}
+
+.container-about img{
+    display: block;
+    height: 70vh;
+    width: auto;
+    margin-right: 2em;
+}
+
+.container-about{}
+
+.container-contact{
+    display: flex;
+    justify-content: center;
+}
+
+.contact-icons{
+    display: inline-block;
+    width: 50vw;
+    height: auto;
+}
+
+a{
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color: #f4f4f4;
+  text-transform: uppercase;
+}
+
+.hire-me{
+    display: flex;
+    width: 50vh;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.hire-me > .btn-cv{
+    text-decoration: none;
+    border: 1px solid rgb(254, 225, 1);
+    position: relative;
+    overflow: hidden;
+    height: 11vh;
+    width: auto;
+    opacity: 50%;
+    margin: 0;
+    padding-bottom: 15px;
+    /* display: flex; */
+    /* text-align: center; */
+}
+
+.hire-me > .btn-cv > p{
+    /* text-align: center; */
+    margin: 0;
+}
+
+.hire-me > .btn-cv:hover{
+    box-shadow: 1px 1px 25px 10px rgba(254, 225, 1, 0.4);
+    color: #FEE101;
+}
+
+.hire-me > .btn-cv:before{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(254, 225, 1, 0.4),
+    transparent
+  );
+  transition: all 650ms;
+}
+
+.hire-me > .btn-cv:hover:before{
+    left: 100%;
+}
+
+.contact-icons{
+    display: inline-block;
+}
+
+.icon-div{
+    /* margin: 10px 0; */
+}
+
+.icon-div {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    width: auto;
+    cursor: pointer;
+}
+
+.icon-div:hover{
+    color: #FEE101;
+}
