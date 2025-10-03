@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Modern Developer Portfolio - [Your Name]",
-  description: "Interactive developer portfolio showcasing modern web development skills and projects",
+  title: "My resume - Heitor Silva",
+  description: "Interactive resume of Heitor Silva, a Full Stack Developer.",
 };
 
 export default function RootLayout({ children }) {
