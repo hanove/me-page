@@ -11,14 +11,12 @@ export default function LanguageSwitcher({ language, setLanguage }) {
     {
       code: 'pt',
       name: 'Português',
-      flag: 'icons/brazil_round_icon_64.png',
-      country: 'Brasil'
+      flag: 'icons/brazil_round_icon_64.png'
     },
     {
       code: 'en',
       name: 'English',
-      flag: 'icons/united_states_of_america_round_icon_64.png',
-      country: 'United States'
+      flag: 'icons/united_states_of_america_round_icon_64.png'
     }
   ];
 
@@ -86,7 +84,6 @@ export default function LanguageSwitcher({ language, setLanguage }) {
               </div>
               <div className="flex flex-col flex-grow">
                 <span className="font-medium text-sm">{lang.name}</span>
-                <span className="text-xs opacity-70">{lang.country}</span>
               </div>
               {language === lang.code && (
                 <div className="ml-auto w-2 h-2 bg-purple-400 rounded-full flex-shrink-0"></div>
