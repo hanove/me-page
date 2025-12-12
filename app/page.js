@@ -163,9 +163,8 @@ export default function ModernPortfolio() {
             {/* About me section */}
             <div id="about" className="bg-gray-800/50 backdrop-blur-sm rounded-2xl p-6 border border-gray-700/50">
               <h3 className="text-xl font-semibold mb-6 flex items-center gap-3">
-                <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-lg">
-                  👨‍💻
-                </div>
+                {/* <div className="w-8 h-8 bg-gradient-to-br from-purple-500 to-pink-500 rounded-lg flex items-center justify-center text-lg">
+                </div> */}
                 {t.about.title}
               </h3>
               
@@ -250,9 +249,8 @@ export default function ModernPortfolio() {
         {/* Professional experience section */}
         <div id="experience" className="mt-16 bg-gray-800/30 backdrop-blur-sm rounded-2xl p-8 border border-gray-700/50">
           <h3 className="text-2xl font-bold mb-8 flex items-center gap-3">
-            <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center text-lg">
-              💼
-            </div>
+            {/* <div className="w-8 h-8 bg-gradient-to-br from-green-500 to-emerald-500 rounded-lg flex items-center justify-center text-lg">
+            </div> */}
             {t.experience.title}
           </h3>
           
@@ -312,15 +310,15 @@ export default function ModernPortfolio() {
               <h3 className="text-2xl font-bold mb-4">{t.contact.title}</h3>
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center gap-3">
-                  <span className="text-purple-400">📧</span>
+                  <span className="text-purple-400">•</span>
                   <span>heitor.ap.silva98@gmail.com</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-purple-400">📍</span>
+                  <span className="text-purple-400">•</span>
                   <span>{t.contact.location}</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-purple-400">💼</span>
+                  <span className="text-purple-400">•</span>
                   <span>{t.contact.available}</span>
                 </div>
               </div>
@@ -335,7 +333,7 @@ export default function ModernPortfolio() {
                   <Image src="/icons/github.png" alt="GitHub" width={40} height={40} className="w-full h-full object-cover" />
                 </a>
                 <a href="mailto:heitor.ap.silva98@gmail.com" className="w-10 h-10 bg-purple-600 hover:bg-purple-700 rounded-full flex items-center justify-center transition-colors">
-                  <span className="text-sm">✉</span>
+                  <span className="text-sm">@</span>
                 </a>
                 <a href="https://t.me/hanoveap" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full overflow-hidden hover:scale-105 transition-transform">
                   <Image src="/icons/telegram.png" alt="Telegram" width={40} height={40} className="w-full h-full object-cover" />
@@ -348,14 +346,14 @@ export default function ModernPortfolio() {
                   rel="noopener noreferrer"
                   className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full text-sm transition-colors border border-blue-400 flex items-center gap-2"
                 >
-                  {t.contact.hello} <span className="text-lg">👋</span>
+                  {t.contact.hello}
                 </a>
                 <a 
                   href={`/cv/CV - Heitor Aparecido da Silva ${language === 'en' ? 'EN' : 'PT'}.pdf`}
                   download={`CV - Heitor Aparecido da Silva ${language === 'en' ? 'EN' : 'PT'}.pdf`}
                   className="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full text-sm transition-colors border border-gray-600 inline-flex items-center gap-2"
                 >
-                  <span>📄</span> {t.contact.download}
+                  {t.contact.download}
                 </a>
               </div>
             </div>
