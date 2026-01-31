@@ -11,7 +11,7 @@ export const translations = {
     },
     about: {
       title: 'Sobre Mim',
-      text1: 'Olá! Sou Heitor, Desenvolvedor Full Stack recém-formado em Ciência da Computação pela Universidade Tecnológica Federal do Paraná (UTFPR), com foco em Java, Spring Boot e Angular.',
+      text1: 'Olá! Sou Heitor, Desenvolvedor Full Stack formado em Ciência da Computação pela Universidade Tecnológica Federal do Paraná (UTFPR), com foco em Java, Spring Boot e Angular.',
       text2: 'Estou sempre ansioso para aprender novas tecnologias e enfrentar projetos desafiadores.'
     },
     experience: {
@@ -104,7 +104,7 @@ export const translations = {
     },
     about: {
       title: 'About Me',
-      text1: 'Hello! I\'m Heitor, a Full Stack Developer recently graduated in Computer Science from Federal University of Technology - Paraná (UTFPR), with focus on Java, Spring Boot and Angular.',
+      text1: 'Hello! I\'m Heitor, a Full Stack Developer graduated in Computer Science from Federal University of Technology - Paraná (UTFPR), with focus on Java, Spring Boot and Angular.',
       text2: 'I\'m always eager to learn new technologies and tackle challenging projects.'
     },
     experience: {
