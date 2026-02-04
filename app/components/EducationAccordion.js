@@ -4,7 +4,7 @@ import { useState } from 'react';
 
 // Education accordion component
 export default function EducationAccordion({ language, translations }) {
-  const [isExpanded, setIsExpanded] = useState(false);
+  const [isExpanded, setIsExpanded] = useState(true);
   const t = translations[language];
 
   const academicExperiences = [
