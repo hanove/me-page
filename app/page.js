@@ -132,9 +132,7 @@ export default function ModernPortfolio() {
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900 text-white">
       {/* Navigation */}
       <nav className="flex justify-between items-center p-6 lg:px-12">
-        <div className="flex items-center">
-          <Image src="/me_chibi_nomk.png" alt="HS" width={100} height={100} className="rounded-full" />
-        </div>
+        <div className="text-lg font-semibold">HS</div>
         <div className="flex gap-6 text-sm">
           <a href="#about" className="hover:text-purple-400 transition-colors">{t.nav.about}</a>
           <a href="#experience" className="hover:text-purple-400 transition-colors">{t.nav.experience}</a>
