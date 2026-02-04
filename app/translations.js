@@ -86,7 +86,7 @@ export const translations = {
           description: 'Criação de uma versão web de um software de definição de zonas de manejo agrícola.'
         },
         leadership: {
-          title: 'Vice-diretor de Eventos do Centro Acadêmico de Ciência da Computação (CACC)',
+          title: 'Vice-diretor de Eventos do Centro Acadêmico de Ciência da Computação',
           description: 'Organização de eventos, palestras e workshops para a comunidade acadêmica. Gestão de equipe e planejamento estratégico.'
         }
       }
@@ -179,7 +179,7 @@ export const translations = {
           description: 'Creation of a web version of agricultural management zone definition software.'
         },
         leadership: {
-          title: 'Vice-Director of Events at Computer Science Academic Center (CACC)',
+          title: 'Vice-Director of Events at Computer Science Academic Center',
           description: 'Organization of events, lectures and workshops for the academic community. Team management and strategic planning.'
         }
       }
