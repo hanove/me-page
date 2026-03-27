@@ -147,7 +147,7 @@ export default function ModernPortfolio() {
       {/* Hero section */}
       <main className="container mx-auto px-6 lg:px-12 py-12">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Left side - Main content */}
           <div className="space-y-8">
             <div>
@@ -167,7 +167,7 @@ export default function ModernPortfolio() {
                 </div> */}
                 {t.about.title}
               </h3>
-              
+
               <div className="grid lg:grid-cols-2 gap-6 items-center">
                 {/* Text content */}
                 <div className="space-y-4">
@@ -196,48 +196,48 @@ export default function ModernPortfolio() {
 
           {/* Right side - Tech cards grid */}
           <div className="grid grid-cols-2 gap-4">
-            <TechnologyCard 
-              icon="java.svg" 
+            <TechnologyCard
+              icon="java.svg"
               title={t.technologies.java.title}
               description={t.technologies.java.description}
               hoverColor="orange-500"
               bgColor="white"
             />
-            
-            <TechnologyCard 
-              icon="angular.png" 
+
+            <TechnologyCard
+              icon="angular.png"
               title={t.technologies.angular.title}
               description={t.technologies.angular.description}
               hoverColor="red-500"
               bgColor="red-500/20"
             />
-            
-            <TechnologyCard 
-              icon="mysql.png" 
+
+            <TechnologyCard
+              icon="mysql.png"
               title={t.technologies.mysql.title}
               description={t.technologies.mysql.description}
               hoverColor="blue-500"
               bgColor="blue-500/20"
             />
-            
-            <TechnologyCard 
-              icon="python.png" 
+
+            <TechnologyCard
+              icon="python.png"
               title={t.technologies.python.title}
               description={t.technologies.python.description}
               hoverColor="yellow-500"
               bgColor="yellow-500/20"
             />
-            
-            <TechnologyCard 
-              icon="react.png" 
+
+            <TechnologyCard
+              icon="react.png"
               title={t.technologies.react.title}
               description={t.technologies.react.description}
               hoverColor="cyan-500"
               bgColor="cyan-500/20"
             />
-            
-            <TechnologyCard 
-              icon="git.png" 
+
+            <TechnologyCard
+              icon="git.png"
               title={t.technologies.git.title}
               description={t.technologies.git.description}
               hoverColor="purple-500"
@@ -253,9 +253,9 @@ export default function ModernPortfolio() {
             </div> */}
             {t.experience.title}
           </h3>
-          
+
           <div className="space-y-8">
-            <ExperienceItem 
+            <ExperienceItem
               title={t.experiences.consultant.title}
               company={t.experiences.consultant.company}
               period="Fev/2023 - Fev/2024"
@@ -267,7 +267,7 @@ export default function ModernPortfolio() {
               ]}
             />
 
-            <ExperienceItem 
+            <ExperienceItem
               title={t.experiences.developer.title}
               company={t.experiences.developer.company}
               period="Mai/2022 - Jan/2023"
@@ -281,7 +281,7 @@ export default function ModernPortfolio() {
               ]}
             />
 
-            <ExperienceItem 
+            <ExperienceItem
               title={t.experiences.intern.title}
               company={t.experiences.intern.company}
               period="Jun/2021 - Abr/2022"
@@ -313,17 +313,17 @@ export default function ModernPortfolio() {
                   <span className="text-purple-400">•</span>
                   <span>heitor.ap.silva98@gmail.com</span>
                 </div>
-                <div className="flex items-center gap-3">
+                {/* <div className="flex items-center gap-3">
                   <span className="text-purple-400">•</span>
                   <span>{t.contact.location}</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <span className="text-purple-400">•</span>
                   <span>{t.contact.available}</span>
-                </div>
+                </div> */}
               </div>
             </div>
-            
+
             <div className="flex flex-col items-start lg:items-end gap-4">
               <div className="flex gap-4 flex-wrap">
                 <a href="https://www.linkedin.com/in/hanove/" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full overflow-hidden hover:scale-105 transition-transform">
@@ -340,15 +340,15 @@ export default function ModernPortfolio() {
                 </a>
               </div>
               <div className="flex gap-3">
-                <a 
-                  href="https://t.me/hanoveap" 
-                  target="_blank" 
+                <a
+                  href="https://t.me/hanoveap"
+                  target="_blank"
                   rel="noopener noreferrer"
                   className="bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-full text-sm transition-colors border border-blue-400 flex items-center gap-2"
                 >
                   {t.contact.hello}
                 </a>
-                <a 
+                <a
                   href={`/cv/CV - Heitor Aparecido da Silva ${language === 'en' ? 'EN' : 'PT'}.pdf`}
                   download={`CV - Heitor Aparecido da Silva ${language === 'en' ? 'EN' : 'PT'}.pdf`}
                   className="bg-gray-700 hover:bg-gray-600 px-6 py-3 rounded-full text-sm transition-colors border border-gray-600 inline-flex items-center gap-2"
